@@ -1,12 +1,3 @@
-#У диска формат файла такой:
-#
-# Название альбома
-# Исполнитель
-# Жанр
-# Год выхода
-# Цена
-# Остаток
-
 class Disc < Product
   attr_accessor :title, :author, :genres, :year, :price, :amount
 

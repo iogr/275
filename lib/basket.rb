@@ -7,9 +7,9 @@ class Basket
   end
 
   def add_to_cart(product)
-      @bought_items << product
-      product.amount -= 1
-      @total += product.price.to_i
+    @bought_items << product
+    product.amount -= 1
+    @total += product.price.to_i
   end
 
   def cost_of_product(selected_product)
