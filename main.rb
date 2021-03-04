@@ -25,17 +25,17 @@ until products.empty? || user_input.zero?
 
   if user_input.between?(1, products.size)
 
-        selected_product = products[user_input - 1]
+    selected_product = products[user_input - 1]
 
-        if selected_product.amount.positive?
-          basket.add_to_cart(selected_product)
-          basket.cost_of_product(selected_product)
+    if selected_product.amount.positive?
+      basket.add_to_cart(selected_product)
+      basket.cost_of_product(selected_product)
 
-          products.delete(selected_product) if selected_product.amount.zero?
+      products.delete(selected_product) if selected_product.amount.zero?
 
-          puts "You added: #{selected_product}"
-        end
+      puts "You added: #{selected_product}"
     end
+  end
 end
 
 if basket.total.positive?
