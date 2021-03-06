@@ -25,8 +25,15 @@ class ProductCollection
     self.new(products)
   end
 
-  def product_list
+  def to_a
     @products
+  end
+
+  def to_s
+    @products
+  end
+
+  def update_products_in_stock!
   end
 
   def sort!(params)

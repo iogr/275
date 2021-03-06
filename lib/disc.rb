@@ -22,7 +22,7 @@ class Disc < Product
     @author = params[:author]
   end
 
-  def update=(params)
+  def update(params)
     super
 
     @title = params[:title]
